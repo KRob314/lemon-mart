@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div fxLayout="column" fxLayoutAlign="center center">
       <div class="mat-display-2">Hello, Limoncu!</div>
-      <button mat-raised-button color="primary" >Login</button>
+      <button mat-raised-button color="primary" routerLink="/manager" >Login</button>
     </div>
   `
 })

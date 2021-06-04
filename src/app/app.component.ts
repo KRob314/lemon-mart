@@ -19,14 +19,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     </button>
   </mat-toolbar>
   <router-outlet></router-outlet>
-`,
+`
 })
 export class AppComponent {
   title = 'lemon-mart';
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer)
   {
-    iconRegistry.addSvgIcon('lemon', sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/lemon.svg?a=1'));
+    iconRegistry.addSvgIcon('lemon', sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/lemon2.svg?a=2'));
+
   }
 
 }

@@ -1,32 +1,39 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="235.000000pt" height="236.000000pt" viewBox="0 0 235.000000 236.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.16, written by Peter Selinger 2001-2019
-</metadata>
-<g transform="translate(0.000000,236.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M845 2348 c-27 -5 -95 -23 -149 -39 -137 -43 -184 -46 -293 -20 -50
-11 -106 21 -124 21 -73 -1 -162 -67 -195 -146 -18 -43 -18 -125 1 -194 23 -84
-19 -141 -15 -229 -17 -43 -38 -112 -46 -152 -30 -140 -16 -448 21 -479 22 -18
-58 6 51 33 -3 12 -11 76 -17 142 -15 151 2 297 51 420 40 100 47 178 26 268
--29 126 -19 176 49 236 43 38 70 39 192 10 111 -27 168 -22 328 27 113 35 128
-38 255 38 326 0 631 -130 885 -378 219 -215 361 -490 402 -780 23 -163 14
--264 -38 -423 -50 -152 -57 -220 -35 -325 20 -97 20 -131 0 -174 -32 -68 -147
--105 -228 -74 -15 5 -54 14 -89 20 -58 9 -73 7 -227 -32 -152 -39 -175 -42
--290 -41 -185 1 -346 41 -525 129 -303 151 -578 456 -686 764 -27 77 -35 90
--61 90 -46 0 -30 -71 52 -240 76 -155 160 -271 290 -400 256 -257 558 -397
-893 -416 113 -6 177 3 373 55 l122 32 73 -17 c164 -38 241 -29 311 34 75 68
-92 140 63 272 -23 103 -19 149 25 283 50 156 64 246 56 369 -32 502 -334 949
--801 1186 -217 110 -513 165 -700 130z"/>
-<path d="M1758 1170 c-67 -52 -23 -160 66 -160 36 0 76 39 82 81 9 51 -33 99
--86 99 -22 0 -47 -8 -62 -20z"/>
-<path d="M1139 1025 c-38 -20 -52 -67 -35 -110 27 -63 98 -75 148 -25 26 27
-30 36 25 68 -11 69 -77 100 -138 67z"/>
-<path d="M1503 921 c-83 -22 -156 -42 -162 -46 -32 -19 13 -95 73 -124 54 -27
-145 -28 201 -2 76 34 135 124 123 188 -5 30 -70 26 -235 -16z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" sodipodi:version="0.32" inkscape:version="0.38.1" width="400.00000pt" height="400.00000pt" sodipodi:docbase="/var/www/html/svg_gallery/svg/fruits" sodipodi:docname="lemon.svg" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs3">
+    <linearGradient id="linearGradient831">
+      <stop style="stop-color: rgb(255, 255, 0); stop-opacity: 1;" offset="0.0000000" id="stop832"/>
+      <stop style="stop-color: rgb(255, 227, 0); stop-opacity: 1;" offset="1.0000000" id="stop833"/>
+    </linearGradient>
+    <radialGradient xlink:href="#linearGradient831" id="radialGradient834" cx="0.33703703" cy="0.28358209" r="0.38183698" fx="0.33703703" fy="0.28358209"/>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="1.3195079" inkscape:cx="120.13018" inkscape:cy="204.09312" inkscape:window-width="910" inkscape:window-height="775" inkscape:window-x="119" inkscape:window-y="24"/>
+  <g id="g838">
+    <path style="fill: url(#radialGradient834) rgb(0, 0, 0); fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 10; stroke-linejoin: round; stroke-dasharray: none;" d="M 68.708186,148.12939 C 228.69852,9.5810597 474.45687,146.15839 471.15810,289.65487 C 497.54826,315.22034 467.85933,343.25988 451.36548,350.68211 C 309.51838,525.51691 17.577254,382.02043 34.895796,237.69925 C 12.847026,174.32754 32.421718,155.55162 68.708186,148.12939 z " id="path827" sodipodi:nodetypes="ccccc"/>
+    <path style="fill-opacity: 0.133333; fill-rule: evenodd; stroke-width: 1pt;" d="M 44.330330,267.99099 C 65.580330,246.74099 68.080330,411.74099 378.08033,350.49099 C 371.83033,344.24099 338.08033,201.74099 458.08033,249.24099 C 504.95533,263.61599 358.70533,239.55349 410.58033,339.24099 C 418.62433,352.33698 416.20533,352.36599 438.08033,357.99099 C 305.58033,500.49099 46.830330,390.49099 44.330330,267.99099 z " id="path828" sodipodi:nodetypes="cccccc"/>
+    <path style="fill: rgb(255, 255, 255); fill-opacity: 0.7; fill-rule: evenodd; stroke-width: 1pt;" d="M 68.080330,155.83295 C 124.36962,90.490990 313.68568,43.977604 438.08033,203.33295 C 395.58033,249.58295 275.58033,49.582958 68.080330,155.83295 z " id="path829" sodipodi:nodetypes="ccc"/>
+    <path style="fill: rgb(255, 255, 255); fill-opacity: 0.7; fill-rule: evenodd; stroke-width: 1pt;" d="M 469.33033,295.49099 C 483.64639,312.99099 470.58033,332.99099 460.58033,330.49099 C 381.83033,309.24099 424.33033,287.99099 469.33033,295.49099 z " id="path830" sodipodi:nodetypes="ccc"/>
+  </g>
+
+  <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <Work rdf:about="">
+    <dc:title>Clipart by Nicu Buculei - pear</dc:title>
+    <dc:rights>
+       <Agent>
+         <dc:title>Nicu Buculei</dc:title>
+       </Agent>
+    </dc:rights>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <license rdf:resource="http://web.resource.org/cc/PublicDomain"/>
+  </Work>
+   
+  <License rdf:about="http://web.resource.org/cc/PublicDomain">
+     <permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+     <permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+     <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+  </License>
+
+</rdf:RDF>
 </svg>
