@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NgModule } from '@angular/core';
+import { PosComponent } from './pos/pos.component';
 import { PosRoutingModule } from './pos-routing.module';
 
-
 @NgModule({
-  declarations: [],
+  declarations: [
+    PosComponent
+  ],
   imports: [
     CommonModule,
     PosRoutingModule
