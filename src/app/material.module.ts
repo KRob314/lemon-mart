@@ -5,9 +5,10 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input'
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip'
 import { NgModule } from '@angular/core';
 
-const modules = [MatButtonModule, MatToolbarModule, MatIconModule]
+const modules = [MatButtonModule, MatToolbarModule, MatIconModule, MatTooltipModule]
 
 @NgModule({
   declarations: [],
