@@ -26,7 +26,7 @@ export class AppComponent {
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer)
   {
-    iconRegistry.addSvgIcon('lemon', sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/lemon2.svg?a=23'));
+    iconRegistry.addSvgIcon('lemon', sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/lemon.svg'));
 
   }
 
