@@ -1,0 +1,54 @@
+{
+  "debug.openExplorerOnEnd": true,
+  "editor.tabSize": 2,
+  "editor.rulers": [90],
+  "editor.cursorBlinking": "solid",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll.tslint": true
+  },
+  /*    "editor.defaultFormatter": "esbenp.prettier-vscode", */
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "javascript.format.enable": true,
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "typescript.format.enable": true,
+  "explorer.openEditors.visible": 0,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.iconTheme": "material-icon-theme",
+  "auto-close-tag.SublimeText3Mode": true,
+  "html.autoClosingTags": true,
+  "peacock.affectActivityBar": true,
+  "peacock.affectStatusBar": true,
+  "peacock.affectTitleBar": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#3ca241",
+    "activityBar.activeBackground": "#3ca241",
+    "activityBar.activeBorder": "#d2d0ee",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#d2d0ee",
+    "activityBarBadge.foreground": "#15202b",
+    "statusBar.background": "#2e7d32",
+    "statusBarItem.hoverBackground": "#3ca241",
+    "statusBar.foreground": "#e7e7e7"
+  },
+  "peacock.color": "#2e7d32",
+  "gitlens.menus": {
+    "editorGroup": false
+  },
+  "ng-evergreen.upgradeChannel": "Latest",
+  "editor.autoIndent": "full"
+}

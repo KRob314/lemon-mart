@@ -71,7 +71,7 @@ export class User implements IUser {
     {
       user.dateOfBirth = new Date(user.dateOfBirth)
     }
-    return new User(user._id, user.email, user.name, user.picture, user.role as Role, user.dateOfBirth, user.userStatus, user.level, user.address, user.phones)ж
+    return new User(user._id, user.email, user.name, user.picture, user.role as Role, user.dateOfBirth, user.userStatus, user.level, user.address, user.phones);
   }
 
   public get fullName() : string{
