@@ -81,4 +81,15 @@ export class InMemoryAuthService extends AuthService {
   protected getCurrentUser(): Observable<User> {
     return of(this.defaultUser)
   }
+
+/*   protected hasExpiredToken (): boolean
+  {
+        const jwt = this.getToken();
+    if (jwt)
+    {
+      const payload = decode(jwt) as any;
+      return Date.now() >= payload.exp * 1000
+    }
+    return true;
+  } */
 }
