@@ -78,6 +78,7 @@ export class LoginComponent implements OnInit {
         ),
         tap(([authStatus, user]) => {
           this.uiService.showToast(`welcome ${user.fullName}! Role: ${user.role}`);
+          //this.uiService.showDialog(`Welcome ${user.fullName}!`, `Role: ${user.role}`);
           this.router.navigate([this.redirectUrl || '/manager'])
         })
       )

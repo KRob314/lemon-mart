@@ -1,6 +1,8 @@
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core'
+import { MatDialogActions, MatDialogContent, MatDialogModule } from '@angular/material/dialog'
+
 import { MatButtonModule } from '@angular/material/button'
 import { MatCardModule } from '@angular/material/card'
-import { MatDialogModule } from '@angular/material/dialog'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatIconModule } from '@angular/material/icon'
 import { MatInputModule } from '@angular/material/input'
@@ -9,7 +11,6 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatTooltipModule } from '@angular/material/tooltip'
-import { NgModule } from '@angular/core'
 
 const modules = [
   MatButtonModule,
@@ -22,10 +23,11 @@ const modules = [
   MatSnackBarModule,
   MatDialogModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
 ]
 
 @NgModule({
   exports: modules,
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class MaterialModule {}

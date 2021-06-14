@@ -18,7 +18,8 @@ import { NgModule } from '@angular/core'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { SimpleDialogComponent } from './common/simple-dialog.component'
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component'
 
 /* import { AngularFireModule } from '@angular/fire' */
 /* import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component' */
@@ -26,7 +27,7 @@ import { environment } from '../environments/environment'
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PageNotFoundComponent, LoginComponent],
+  declarations: [AppComponent, HomeComponent, PageNotFoundComponent, LoginComponent, NavigationMenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
