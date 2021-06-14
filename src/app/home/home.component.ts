@@ -11,6 +11,12 @@ import { combineLatest } from 'rxjs';
     div[fxLayout] {margin-top: 32px;}
   `],
   template: `
+   <div *ngIf="displayLogin">
+     <app-login></app-login>
+     </div>
+     <div *ngIf="!displayLogin">
+       <span class="mat-display-3">You get a lemon, you get a lemon, you get a lemon.</span>
+       </div>
     <div fxLayout="column" fxLayoutAlign="center center">
       <div class="mat-display-2">Hello, Limoncu!</div>
       <button mat-raised-button color="primary" (click)="login()" >Login as manager</button>
@@ -18,6 +24,7 @@ import { combineLatest } from 'rxjs';
   `
 })
 export class HomeComponent implements OnInit {
+  displayLogin = true;
 
   constructor(private authService: AuthService, private router: Router) { }
 
