@@ -1,12 +1,13 @@
 import { ActivatedRoute, Router } from '@angular/router'
 import { Component, OnInit } from '@angular/core';
+import { EmailValidation, PasswordValidation } from '../common/validations';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { catchError, filter, tap } from 'rxjs/operators'
 
 import { AuthService } from '../auth/auth.service'
-import { MaterialModule } from '../material.module';
 import { Role } from '../auth/auth.enum'
 import { SubSink } from 'subsink'
+import { UiService } from '../common/ui.service';
 import { combineLatest } from 'rxjs'
 
 /* import { UiService } from '../common/ui.service'
@@ -37,7 +38,8 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private uiService: UiService
   ) {
     this.loginForm = new FormGroup({email: new FormControl(''), password: new FormControl('')})
     this.subs.sink = route.paramMap.subscribe(
@@ -53,24 +55,12 @@ export class LoginComponent implements OnInit {
 
   buildLoginForm() {
     this.loginForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [
-        Validators.required,
-        Validators.minLength(8),
-        Validators.maxLength(50),
-      ]],
+      email: ['', EmailValidation],
+      password: ['', PasswordValidation],
     })
   }
 
   async login(submittedForm: FormGroup) {
-    console.log('login');
-    console.log(submittedForm);
-    console.log(    this.authService
-      .login(
-        submittedForm.value.email,
-        submittedForm.value.password
-      ));
-
     this.authService
       .login(
         submittedForm.value.email,
@@ -87,6 +77,7 @@ export class LoginComponent implements OnInit {
             authStatus.isAuthenticated && user?._id !== ''
         ),
         tap(([authStatus, user]) => {
+          this.uiService.showToast(`welcome ${user.fullName}! Role: ${user.role}`);
           this.router.navigate([this.redirectUrl || '/manager'])
         })
       )
