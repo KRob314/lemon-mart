@@ -1,4 +1,4 @@
-/* {
+{
   "debug.openExplorerOnEnd": true,
   "editor.tabSize": 2,
   "editor.rulers": [90],
@@ -11,10 +11,10 @@
     "source.organizeImports": false,
     "source.fixAll.tslint": true
   },
-     "editor.defaultFormatter": "esbenp.prettier-vscode",
+  /*      "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
     "editor.defaultFormatter": "HookyQR.beautify"
-  },
+  }, */
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
   "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
   "javascript.format.enable": true,
@@ -52,4 +52,3 @@
   "ng-evergreen.upgradeChannel": "Latest",
   "editor.autoIndent": "full"
 }
- */
