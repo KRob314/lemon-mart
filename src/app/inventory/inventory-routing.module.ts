@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
+import { AuthGuard } from '../auth/auth-guard.service';
 import { CategoriesComponent } from './categories/categories.component';
 import { InventoryComponent } from './inventory.component';
 import { InventoryHomeComponent } from './inventory-home/inventory-home.component';
@@ -13,10 +14,10 @@ const routes: Routes = [
     component: InventoryComponent,
     children: [
       {path: '', redirectTo: '/inventory/home', pathMatch: 'full'},
-      {path: 'home', component: InventoryHomeComponent},
-      {path: 'stock-entry', component: StockEntryComponent},
-      {path: 'products', component: ProductsComponent},
-      {path: 'categories', component: CategoriesComponent}
+      {path: 'home', component: InventoryHomeComponent, canActivate: [AuthGuard]},
+      {path: 'stock-entry', component: StockEntryComponent, canActivate: [AuthGuard]},
+      {path: 'products', component: ProductsComponent, canActivate: [AuthGuard]},
+      {path: 'categories', component: CategoriesComponent, canActivate: [AuthGuard]}
     ]
   }
 ];

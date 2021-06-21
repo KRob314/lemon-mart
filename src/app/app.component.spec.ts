@@ -17,9 +17,9 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       providers: commonTestingProviders.concat([
-        {provide: MediaObserver, useClass: MediaObserverFake},
         {provide: MatIconRegistry, useClass: MatIconRegistryFake},
-        {provide: DomSanitizer, useClass: DomSanitizerFake}
+        { provide: DomSanitizer, useClass: DomSanitizerFake },
+        {provide: MediaObserver, useClass: MediaObserverFake}
       ]),
       imports: [
         commonTestingModules,

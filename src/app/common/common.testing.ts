@@ -1,24 +1,30 @@
 import { Observable, Subscription, of } from 'rxjs'
-import {SafeResourceUrl, SafeValue} from '@angular/platform-browser'
+import { SafeResourceUrl, SafeValue } from '@angular/platform-browser'
 
-import {HttpClientTestingModule} from '@angular/common/http/testing'
+import { AuthService } from '../auth/auth.service'
+import { HttpClientTestingModule } from '@angular/common/http/testing'
 import { MaterialModule } from '../material.module'
 import { MediaChange } from '@angular/flex-layout'
 import { NoopAnimationsModule } from '@angular/platform-browser/animations'
 import { ReactiveFormsModule } from '@angular/forms'
 import { RouterTestingModule } from '@angular/router/testing'
 import { SecurityContext } from '@angular/core'
+import { UiService } from './ui.service'
+import { autoSpyObj } from 'angular-unit-test-helper'
 
 const FAKE_SVGS = {
   lemon: '<svg><path id="lemon" name="lemon"></path></svg>',
 }
+
 export class MediaObserverFake {
   isActive(query: string): boolean {
     return false
   }
+
   asObservable(): Observable<MediaChange> {
     return of({} as MediaChange)
   }
+
   subscribe(
     next?: (value: MediaChange) => void,
     error?: (error: any) => void,
@@ -27,6 +33,7 @@ export class MediaObserverFake {
     return new Subscription()
   }
 }
+
 export class MatIconRegistryFake {
   // tslint:disable-next-line: variable-name
   _document = document
@@ -34,12 +41,13 @@ export class MatIconRegistryFake {
     // this.addSvgIcon('lemon', 'lemon.svg')
     return this
   }
+
   getNamedSvgIcon(name: string, namespace: string = ''): Observable<SVGElement> {
     return of(this._svgElementFromString(FAKE_SVGS.lemon))
   }
+
   private _svgElementFromString(str: string): SVGElement {
-    const div = (this._document || document)
-      . createElement('DIV')
+    const div = (this._document || document).createElement('DIV')
     div.innerHTML = str
     const svg = div.querySelector('svg') as SVGElement
     if (!svg) {
@@ -48,21 +56,21 @@ export class MatIconRegistryFake {
     return svg
   }
 }
+
 export class DomSanitizerFake {
   bypassSecurityTrustResourceUrl(url: string): SafeResourceUrl {
     return {} as SafeResourceUrl
   }
-  sanitize(
-    context: SecurityContext,
-    value: SafeValue | string | null):
-      string | null
-  {
+  sanitize(context: SecurityContext, value: SafeValue | string | null): string | null {
     return value?.toString() || null
   }
 }
+
 export const commonTestingProviders: any[] = [
-  // Intentionally Left Blank!!!
+  { provide: AuthService, useValue: autoSpyObj(AuthService) },
+  { provide: UiService, useValue: autoSpyObj(UiService) },
 ]
+
 export const commonTestingModules: any[] = [
   ReactiveFormsModule,
   MaterialModule,
