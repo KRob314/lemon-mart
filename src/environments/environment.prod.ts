@@ -1,5 +1,8 @@
+import { AuthMode } from "./environment";
+
 export const environment = {
   production: true,
+  authMode: AuthMode.Firebase,
       firebase: {
       apiKey: "AIzaSyC1GhscLOrqXsvSPtBZ4M5th1z-DDfRhsQ",
       authDomain: "lemon-mart-cde0a.firebaseapp.com",

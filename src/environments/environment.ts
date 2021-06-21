@@ -2,8 +2,16 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+export enum AuthMode
+{
+  InMemory = 'In Memory',
+  CustomServer = 'Custom Server',
+  Firebase = 'Firebase'
+}
+
 export const environment = {
   production: false,
+  authMode: AuthMode.InMemory,
     firebase: {
       apiKey: "AIzaSyC1GhscLOrqXsvSPtBZ4M5th1z-DDfRhsQ",
       authDomain: "lemon-mart-cde0a.firebaseapp.com",
